@@ -1,0 +1,224 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+
+
+}
+
+.logoprincipal{
+    background-color: rgb(247, 247, 247);
+}
+
+.logo{
+    height: 40px;
+    bottom: 30px;
+    margin: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+
+}
+
+h1{
+    margin-left: 215px;
+    height: 30px;
+    width: 250px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.verde{
+    color: #00cbbf;;
+}
+
+h2{
+    font-size: 15px;
+    margin-left: 215px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.rut{
+    font-size: 15px;
+    height: 180px;
+    margin-top: 20px;
+    align-content: center;
+    margin-left: 215px;
+    
+}
+
+
+
+.input-text{
+    border-radius: 60px;
+    height: 50px;
+    width: 250px;
+    text-align: center;
+
+}
+
+.clave{
+    margin-top: 30px;
+}
+
+
+.partebaja{
+    margin-left: 280px;
+    width: 150px;
+    margin-top: 20px;
+    color: rgba(0, 0, 255, 0.692);
+}
+
+
+
+
+
+.btn-ingresar {
+    background-color: #00cbbf;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 215px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+}
+
+.btn-ingresarr {
+    background-color: #f5f5f5;
+    color: #00cbbf;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 70px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    margin-left: 215px;
+}
+
+.huella{
+    margin-left: 60px;}
+
+.volver{
+    margin-top: 50px;
+    margin-left: 15px;
+}
+
+.principal{
+    display: flex;
+}
+
+.izquierda{
+    width: 750px;
+    padding: 0;
+}
+
+.derecha{
+    width: 790px;
+    background-color: #00cbbf;
+
+}
+
+
+
+.conpu{
+    width: 150px;
+    margin-left: 440px;
+    background-color: rgb(250, 250, 250);
+    height: 120px;
+    border-radius: 20px;
+    
+}
+
+.computadora{ 
+    width: 80px;
+    margin-left: 35px;
+    margin-top: 20px;
+}
+
+.feliz {
+    width: 170px;
+    margin-left: 200px;
+    background-color: rgb(250, 250, 250);
+    margin-top: 25px;
+    border-radius: 20px;
+    height: 180px;
+}
+
+.telefono {
+    width: 80px;
+    background-color: rgb(250, 250, 250);
+    height: 120px;
+    border-radius: 20px;
+    margin-left: 55px;
+}
+
+.texto {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+}
+
+
+.familia{
+    width: 150px;
+    margin-left: 440px;
+    background-color: rgb(250, 250, 250);
+    height: 130px;
+    border-radius: 20px;
+}
+
+
+.familia2{
+    margin-left: 45px;
+    margin-top: 25px;
+    width: 60px;
+}
+
+
+h3{
+    color: white;
+    margin-top: 70px;
+    font-size: 22px;
+    margin-left: 80px;
+}
+
+.final2{
+    font-size: 16px;
+    text-align: center;
+    width: 500px;
+    color: white;
+    margin-left:80px;
+    margin-top: 20px;
+}
+
+
+
+
+.ok2{
+    background-color: #f0f0f0;
+    color: #00cbbf;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 70px;
+    height: 40px;
+    text-align: center;
+    width: 280px;
+}
