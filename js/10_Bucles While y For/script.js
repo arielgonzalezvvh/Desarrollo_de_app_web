@@ -13,19 +13,34 @@ function buclewhile(){
 }
 
 
-function buclefor(){
-    for ( let count = 10; count >= 1;  count--  ) {
-        array.push(count)
-        let array = [];
-        alert(`los numeros son: ${array.join(" - ")}`);
+function buclefor() {
+    let array = [];  
+    for ( i = 10; i >= 1; i--) { // en un for es i no cambia la variable
+        array.push(i); // inserta valor a array  
     }
+    alert(`Los números son: ${array.join(" - ")}`); // el signo $ sirve para poner una instruccion en una comentario como ejemplo  'hola'
 }
 
-function buclefor() {
-    let array = [];  // Declarar el array fuera del bucle
-    for (let count = 10; count >= 1; count--) {
-        array.push(count);  // Agregar números al array
+function contarnNumeros(){
+    let n = parseInt(prompt("Ingrese un numero entero:"));
+    count = 1;
+    let array = []
+    while(count <= n){
+        array.push(count); // psuh pone los datos al finla del array
+        count++
     }
-    alert(`Los números son: ${array.join(" - ")}`);  // Mostrar el array completo al final
+    alert(`contando: ${array.join (" - ")}`)
+}
+
+function sumarNumeros(){
+    let suma = 0;
+    let array = [];
+    for(i= 1; i <=5; i++){
+        suma+= i;
+        array.push(i);
+    }
+    alert(suma)
+
+
 }
 
