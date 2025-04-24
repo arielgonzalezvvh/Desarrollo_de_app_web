@@ -1,0 +1,49 @@
+/* Reseteo y estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: solid 1px;
+
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+}
+
+#nav {
+    background-color:   #2c3e50;
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 10px;
+    align-items: center;
+    height: auto;
+}
+
+h1{
+    color: #f8f9f9;
+    font-size: 30px;
+    margin-left: 60px;
+}
+
+.inicio{
+    color: #fbfcfc;
+    margin-left: 600px;
+}
+
+.Mi{
+    color: #fbfcfc;
+    margin-left: 30px;
+}
+
+.Conexiones{
+    color: #fbfcfc;
+    margin-right: 300px;
+    margin-left: 30px;
+}
+

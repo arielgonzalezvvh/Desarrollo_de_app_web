@@ -13,8 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    margin-top: 60px;
 }
 
 /* Estilo del encabezado */
@@ -69,4 +68,10 @@ button:hover{
     background-color: rgba(68, 66, 61, 0.274);
     transform: scale(1.1);
 
+}
+
+.pie{
+    margin-left: 630px;
+    margin-top: 30px;
+    width: 130px;
 }
