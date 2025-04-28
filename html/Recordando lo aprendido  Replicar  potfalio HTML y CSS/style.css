@@ -3,47 +3,175 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: solid 1px;
-
 
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #ecf0f1;
 }
 
+/* Barra de navegación */
 .container {
     width: 100%;
 }
 
 #nav {
-    background-color:   #2c3e50;
+    background-color: #2c3e50;
     display: flex;
-    flex-wrap: wrap; 
-    padding: 10px;
+    flex-wrap: wrap;
+    padding: 18px;
     align-items: center;
-    height: auto;
 }
 
-h1{
+h1 {
     color: #f8f9f9;
     font-size: 30px;
     margin-left: 60px;
 }
 
-.inicio{
+.inicio {
     color: #fbfcfc;
-    margin-left: 600px;
+    margin-left: 650px;
 }
 
-.Mi{
+.Mi {
     color: #fbfcfc;
     margin-left: 30px;
 }
 
-.Conexiones{
+.Conexiones {
     color: #fbfcfc;
-    margin-right: 300px;
     margin-left: 30px;
 }
 
+.cerrar {
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #3798dc;
+    color: #c1dff4;
+}
+
+/* Principal */
+.Principal {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* Tarjeta de perfil */
+.contenedor {
+    width: 600px;
+    margin-right: 50px;
+}
+
+.joe {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.banner {
+    background-color: #3498db;
+    height: 80px;
+}
+
+.icon {
+    height: 130px;
+    margin-top: -65px;
+    border-radius: 100px;
+    border: 3px solid white;
+}
+
+.parrafo {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+.editar {
+    margin-top: 10px;
+    color: #3498db;
+    cursor: pointer;
+}
+
+/* Sección de conexiones y solicitudes */
+.partefinal {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hijo {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 330px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.solicitudes {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.hola{
+    display: flex;
+}
+
+.vertodas {
+    background: none;
+    border: none;
+    color: #3498db;
+    cursor: pointer;
+    margin-left: 30px;
+    width: 70px;
+}
+
+.vertodas2 {
+    background: none;
+    border: none;
+    color: #3498db;
+    cursor: pointer;
+    margin-left: 90px;
+    
+}
+
+
+.usuario {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.icon2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.listo {
+    height: 20px;
+    cursor: pointer;
+    margin-left: 80px;
+}
+
+.rechazar{
+    height: 20px;
+}
+
+
+.listo2 {
+    height: 20px;
+    cursor: pointer;
+    margin-left: 90px;
+}
+
+.rechazar2{
+    height: 20px;
+}
