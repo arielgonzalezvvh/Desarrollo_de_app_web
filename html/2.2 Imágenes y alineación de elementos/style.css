@@ -1,0 +1,39 @@
+*/*{
+    outline: solid black 2px;
+}*/
+.container{
+    width: 900px;
+    margin: 0 auto;
+}
+
+.row{
+    background-color: rgb(247, 174, 85);
+    height: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+h1{
+    text-align: center;
+    text-decoration: #d4a4be;
+    text-shadow: #991d5f;
+    color: #d4a4be;
+}
+#blue{
+    background-color: #5bcbd4;
+}
+
+#pink{
+    background-color: #d4a4be;
+}
+
+#white{
+    background-color: rgb(173, 211, 245);
+}
+
+img{
+    height: 150px;
+    width: 220px;
+    margin: 14px;
+    padding: 20px;   
+}
