@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: solid 1px red;
+}
+
+.main {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.izquierda {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.top-left {
+    width: 500px;
+    height: 250px;
+    background-color: #b3b5b4;
+}
+
+.bottom-left {
+    width: 500px;
+    height: 70px;
+    background-color: #b3b5b4;
+}
+
+.top-right, .bottom-right {
+    width: 150px;
+    height: 160px;
+    background-color: #b3b5b4;
+}
+
+.izquierdabajo{
+    
+}
