@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: solid 1px red;
+
 }
 
 .main {
@@ -32,6 +32,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
 }
 
 
@@ -70,7 +71,79 @@
 
 
 .vertical-stack{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.derecha2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.top-left{
+    height: 340px;
+    width: 200px;
+    background-color: #b3b5b4;
+}
+
+
+.bottom-right2{
+    width: 150px;
+    height: 160px;
+    background-color: #b3b5b4;
+    
+}
+
+.derechaal{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.ñ{
+    height: 150px;
+    width: 250px;
+    background-color: #b3b5b4;
+}
+
+
+.p{
+    height: 550px;
+    background-color: #b3b5b4;
+}
+
+.izquierda3{
+    display: flex;
+    gap: 20px;
+}
+
+.cuadradogrande{
+    height: 340px;
+    width: 200px;
+    background-color: #b3b5b4;
+}
+
+
+
+.cuadradogrande2{
     height: 200px;
-    background-color: antiquewhite;
-    width: 100px;
+    width: 300px;
+    background-color: #b3b5b4;
+}
+
+.ll{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.bottom-right3{
+    height: 50px;
+    width: 30px;
+    background-color: aqua;
 }
