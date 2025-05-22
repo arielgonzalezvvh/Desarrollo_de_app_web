@@ -1,73 +1,81 @@
+/* ====== Reset general de márgenes y relleno ====== */
 * {
-
-    margin: 0;
-    padding: 0;
+    margin: 0;  /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina relleno por defecto */
+    outline: solid 1px;
 }
 
+/* ====== Títulos ====== */
 h1 {
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 10px; 
-
+    color: #ffffff; /* Color de texto blanco */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 10px; /* Espacio debajo del título */
 }
 
 h2 {
-    display: flex;
+    display: flex; /* Hace que el título sea un contenedor flex */
     color: #ffffff;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px; 
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin-bottom: 15px;
 }
 
-h3{
-    margin-bottom: 15px; 
+h3 {
+    margin-bottom: 15px; /* Espacio debajo de subtítulos */
 }
 
-
+/* ====== Sección del encabezado ====== */
 .parte1 {
-    background-color: #34495e;
-    padding: 25px;
+    background-color: #34495e; /* Color de fondo gris oscuro */
+    padding: 25px; /* Espaciado interno */
 }
 
+/* ====== Párrafo en la cabecera ====== */
 .parrafoarriba {
     color: #ffffff;
     font-size: 15px;
     margin-top: 15px;
 }
 
+/* ====== Contenedor principal de todo el contenido flex ====== */
 .flexprincipal {
-    justify-content: center;
-    padding: 60px;
+    justify-content: center; /* Centrado de contenido interno */
+    padding: 60px; /* Espaciado interno alrededor */
 }
 
+/* ====== Bloque introductorio color naranja ====== */
 .primerflex {
-    background-color: #e67e22;
-    padding: 40px;
+    background-color: #e67e22; /* Fondo naranja */
+    padding: 40px; /* Espaciado interno */
 }
 
+/* ====== Texto del bloque introductorio ====== */
 .parrafo2 {
     color: #ffffff;
-    justify-content: center;
-    text-align: center;
+    text-align: center; /* Centra el texto horizontalmente */
+    justify-content: center; /* (No tiene efecto en elementos no flex) */
 }
 
-.flex{
-    background-color: #d35400;
-    width: 350px;
-    justify-content: center;
+/* ====== Estilo de las tarjetas individuales ====== */
+.flex {
+    background-color: #d35400; /* Naranja oscuro */
+    width: 350px; /* Ancho fijo de cada tarjeta */
+    justify-content: center; /* No tiene efecto aquí directamente */
     text-align: center;
     color: #ffffff;
-    padding: 20px;
-}
-
-.flexabajo {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    padding: 30px;
     
 }
 
+/* ====== Contenedor que organiza las 3 tarjetas ====== */
+.flexabajo {
+    margin-top: 20px;
+    display: flex; /* Convierte el contenedor en flex */
+    justify-content: space-around; /* Espacia las tarjetas equitativamente */
+    flex-wrap: wrap; /* Permite que se muevan a la siguiente línea si no caben */
+}
+
+/* ====== Texto en las tarjetas ====== */
 .parrafo3 {
     color: #ffffff;
 }
