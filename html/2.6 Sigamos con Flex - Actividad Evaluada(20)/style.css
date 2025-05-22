@@ -1,0 +1,73 @@
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px; 
+
+}
+
+h2 {
+    display: flex;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px; 
+}
+
+h3{
+    margin-bottom: 15px; 
+}
+
+
+.parte1 {
+    background-color: #34495e;
+    padding: 25px;
+}
+
+.parrafoarriba {
+    color: #ffffff;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.flexprincipal {
+    justify-content: center;
+    padding: 60px;
+}
+
+.primerflex {
+    background-color: #e67e22;
+    padding: 40px;
+}
+
+.parrafo2 {
+    color: #ffffff;
+    justify-content: center;
+    text-align: center;
+}
+
+.mayami {
+    background-color: #d35400;
+    width: 350px;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.flexabajo {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.parrafo3 {
+    color: #ffffff;
+}
