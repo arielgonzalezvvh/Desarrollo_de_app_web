@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: solid 1px;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2f4f8;
+  }
+  
+  .contenedor {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* NAV */
+  .nav {
+    background-color: #b4b3b3;
+    color: white;
+    min-width: 200px;
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+  }
+  
+  .nav h2 {
+    margin-bottom: 20px;
+  }
+  
+  .nav ul {
+    list-style: none;
+  
+  }
+  
+  .nav li {
+    margin: 10px 0;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: rgba(236, 236, 230, 0.726);
+    transition: 0.3s;
+    font: 150% sans-serif;
+    border-radius: 10px;
+    background-color: #000000e3;
+  }
+  
+  .nav a:hover {
+    color: #00ff99;
+    box-shadow: 0 0 10px rgba(0, 255, 153, 0.8);
+  }
+  
+  /* CONTENIDO */
+  .contenido {
+    flex: 4;
+    padding: 30px;
+  }
+  
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .tarjeta {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .tarjeta:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Proporciones */
+  .grande {
+    flex: 3;
+    background-color: #ffd54f;
+  }
+  
+  .mediana {
+    flex: 2;
+    background-color: #4fc3f7;
+  }
+  
+  .pequeña {
+    flex: 1;
+    background-color: #81c784;
+  }
+
+
+
+.logo{
+    height: 40px;
+}
+
+.logo:hover{
+    background-color: rgba(173, 17, 11, 0.356);
+}
+
+.imgnav{
+    height: 317px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+ 
+
+}
+
+.imgnav:hover{
+    transform: scale(1.1);
+
+}
+
