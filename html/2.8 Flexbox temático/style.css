@@ -2,55 +2,68 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: solid 1px;
+
 
 
   }
   
   body {
   font-family: 'Segoe UI', sans-serif;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-    background-color: #000000; /* Color de respaldo si no carga */
+    background: linear-gradient(to bottom,#000000, #ffffffa2,#38383f); 
   }
   
   .contenedor {
   display: flex;
   }
+
   
   /* NAV */
   .nav {
- background: linear-gradient(to bottom, #1c1c1c, #2e2e2e); /* De gris muy oscuro a gris oscuro */
+  background: linear-gradient(to bottom,#ffffffa2, #000000,#38383f); 
   color: white;
   min-width: 200px;
   flex: 1;
   max-width: 300px;
   padding: 20px;
+  
   }
   
 
   
   .N {
-  height: 50px;
+  height: 45px;
   margin-bottom: 15px;
+  margin-left: 30px;
+  }
+
+    .N:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  filter: brightness(1.2);
+  cursor: pointer;
   }
 
 
   .chino{
-    
+
+    padding: 30px;
+    text-align: center;
   }
 
-  .chino:hover{
- 
-  }
+.chinito:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+
 
   .chinito{
     height: 250px;
-    display: block;     /* fuerza que cada imagen esté en una nueva línea */
-    margin-bottom: 20px; /* espacio debajo de cada imagen */
+    display: block;     
+    margin-bottom: 20px;
     max-width: 200px;
+    
   }
   
   /* CONTENIDO */
@@ -58,13 +71,13 @@
   flex: 1;
   padding: 30px;
   overflow-y: auto;
- background: linear-gradient(to bottom,rgba(255, 255, 255, 0.236), rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0)); /* De gris muy oscuro a gris oscuro */
+  background: linear-gradient(to bottom,#ffffffa2, #000000,#38383f); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 40px;
   color: white;
-  min-height: 100vh; /* ocupa toda la pantalla */
+  min-height: 100vh;
   }
   
   .contenido  {
@@ -74,17 +87,17 @@
   }
 
 h1 {
-  font-size: 40px;            /* Tamaño grande */
-  cursor: pointer;            /* Cursor tipo mano */
-  color: #ffffff;             /* Verde suave */
+  font-size: 40px;          
+  cursor: pointer;           
+  color: #ffffff;            
   transition: all 0.5s ease;
-  width: auto;  /* Transición suave para todos los cambios */
+  width: auto; 
 }
 
 h1:hover {
-  transform: scale(1.1);      /* Aumenta de tamaño */
-  color: #ff0033; /* Rojo neón */
-  text-shadow: 2px 2px 10px rgba(255, 0, 51, 0.7),  0 0 30px rgba(255, 0, 51, 0.7); /* Brillo rojo */
+  transform: scale(1.1);     
+  color: #ff0033; 
+  text-shadow: 2px 2px 10px rgba(255, 0, 51, 0.7),  0 0 30px rgba(255, 0, 51, 0.7); 
   filter: saturate(10)
     
 }
@@ -126,51 +139,120 @@ h1:hover {
   flex-grow: 0;
   background-color: #000000;
   }
+
+  .grande:hover {
+  transform: scale(1.1);     
+  color: #ff0033;             
+  text-shadow: 2px 2px 10px rgba(255, 0, 51, 0.7), 0 0 30px rgba(255, 0, 51, 0.7);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
   
   .mediana {
   flex: 1;
   background-color: #000000;
   }
+
+  .mediana:hover {
+  transform: scale(1.1);
+  color: #ff0033;
+  text-shadow: 2px 2px 10px rgba(255, 0, 51, 0.7), 0 0 30px rgba(255, 0, 51, 0.7);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
   
   .pequeña {
     flex: 1;
   background-color: #000000;
     transition: all 0.5s ease;
     cursor: pointer;
+  
+  }
+
+  .ra{
+    border-radius: 20px;
   }
 
   .pequeña:hover{
-  transform: scale(1.1);      /* Aumenta de tamaño */
-  color: #ff0033; /* Rojo neón */
-  text-shadow: 2px 2px 10px rgba(255, 0, 51, 0.7),  0 0 30px rgba(255, 0, 51, 0.7); /* Brillo rojo */
-
+  transform: scale(1.1);
+  color: #ff0033;
+  text-shadow: 2px 2px 10px rgba(255, 0, 51, 0.7), 0 0 30px rgba(255, 0, 51, 0.7);
+  transition: all 0.5s ease;
+  cursor: pointer;
   }
 
 
-  .hola2{
+  .galeria2{
     display: flex;
     margin-top: 50px;
     gap: 30px;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
 
   .grande2{
-    background-color: #81c784;
-    flex: 2; 
+    background-color: #000000;
+    flex: 2;
+    max-height: 300px;    
   }
 
+
+  .grande2:hover {
+  transform: scale(1.1);
+  color: #ff0033;
+  text-shadow: 2px 2px 10px rgba(255, 0, 51, 0.7), 0 0 30px rgba(255, 0, 51, 0.7);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
   .mediana2{
-    background-color: #81c784;
+    background-color: #000000;
     flex: 3; 
   }
 
-    .hola{
+  .mediana2:hover {
+  transform: scale(1.1);
+  color: #ff0033;
+  text-shadow: 2px 2px 10px rgba(255, 0, 51, 0.7), 0 0 30px rgba(255, 0, 51, 0.7);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+    .galeria3{
+    
+    flex-wrap: wrap;
     display: flex;
     margin-top: 50px;
     gap: 30px;
   }
 
   .pequeña2{
-    background-color: #81c784;
+    background-color: #000000;
+    flex: 3;
   }
+
+  .pequeña2:hover {
+  transform: scale(1.1);
+  color: #ff0033;
+  text-shadow: 2px 2px 10px rgba(255, 0, 51, 0.7), 0 0 30px rgba(255, 0, 51, 0.7);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+
+  .mediana3{
+    background-color: #000000;
+    flex: 2; 
+  }
+
+  .mediana3:hover {
+    transform: scale(1.1);
+  color: #ff0033;
+  text-shadow: 2px 2px 10px rgba(255, 0, 51, 0.7), 0 0 30px rgba(255, 0, 51, 0.7);
+  transition: all 0.5s ease;
+  cursor: pointer;
+  }
+
+
+
