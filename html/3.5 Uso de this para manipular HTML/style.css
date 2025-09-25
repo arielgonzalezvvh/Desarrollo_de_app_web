@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*outline: 1px solid black;*/
+    font-family: cursive;
+    font-weight: 100;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 15%;
+    text-align: center;
+    display: flex;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.definitions {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.add-def {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+}
+
+nav {
+    background-color: #CCCCCC;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 3em;
+    padding-block: 1em;
+    margin-right: 25em;
+    flex-wrap: wrap;
+}
+
+#browser {
+    font-size: 1.2em;
+    margin-block: 0.5em;
+    border: 2px solid black;
+    width: 24em;
+}
+
+#login {
+    background-color: #2B78E4;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.header {
+    display: flex;
+    flex: 1;
+    margin: 0.6em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.likes {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 0.9em;
+    margin-top: 1em;
+}
+
+button {
+    background-color: #FFD966;
+    padding: 0.1em 0.5em;
+    margin: 10px;
+    font-size: 1.4em;
+    border: 3px solid black;
+    box-shadow: 0.2em 0.2em rgba(0, 0, 0, 1);
+}
+
+.card-1 {
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    border: 5px solid black;
+    width: 35em;
+    height: 12em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.word {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10em;
+}
+
+.definition {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 3em;
+}
+
+.card-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    text-align: start;
+    justify-content: space-between;
+    border: 5px solid black;
+    width: 13em;
+    height: 10em;
+    margin-top: 3em;
+    margin-right: 25em;
+}
+
+.card-2 h2 {
+    font-size: 1.8em;
+}
+
+#add {
+    background-color: #93C47D;
+}
+
+strong {
+    font-weight: 600;
+}
