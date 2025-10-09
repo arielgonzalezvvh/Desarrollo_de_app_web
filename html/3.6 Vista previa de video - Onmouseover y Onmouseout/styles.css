@@ -9,7 +9,7 @@
 .top{
     font-size: 15px;
     color: aliceblue;
-    
+    width: 1700px;
 }
 
 .nav-container{
@@ -40,14 +40,50 @@
 
 .flex-container{
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    margin-left: 165px;
+    margin-top: 30px;
+    flex-wrap: wrap;
 }
 
 .col-l{
-    background-color: aqua;
     margin-left: 5%;
-
 }
 
+h3{
+    margin-top: 10px;
+}
+
+.row{
+    display: flex;
+    width: 617px;
+    margin-top: 15px;
+}
+
+
+
+.user{
+    display: flex;
+    margin-top: 15px;
+    
+}
+.user-name{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #9900ff;
+}
+
+.btn2{
+    height: 30px;
+    width: 16%;
+    margin-left: 160px;
+    background-color: #9900ff;
+    margin-top: 20px;
+    color: aliceblue;
+    border: 3px solid black;
+    
+}
+
+.avatar-s{
+    height: 40px;
+}
 
