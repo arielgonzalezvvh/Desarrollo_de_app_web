@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoLab</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- top navigation -->
+    <div class="top">
+        <div class="nav-container">
+            <h1>VideoLab</h1>
+            <input type="text" placeholder="Search" name="query" class="search">
+            <button class="btn">Login</button>
+        </div>
+    </div>
+
+    <!-- main content -->
+    <div class="flex-container">
+
+        <!-- left column -->
+        <div class="col-l">
+
+
+            <iframe 
+    id="mainVideo"
+    width="100%" 
+    height="400" 
+    src="https://www.youtube.com/embed/7VQws9A-OtM?start=92" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+
+            <!-- video info -->
+            <div class="row">
+                <div class="start">
+                    <h1 id="textoMain">Example Video Title</h1>
+                    <h3>1.3K Views | June, 18, 2021</h3>
+                    <div class="user">
+                        <img src="img/user_profile.png" alt="user-circle" class="avatar-s">
+                        <span class="user-name">Example User Name</span>
+                    </div>
+                </div>
+                <button class="btn">Subscribe</button>
+            </div>
+
+        </div>
+
+        <!-- right column -->
+        <div class="col-r">
+
+            <h3 class="sub-header">Up Next</h3>
+
+            <div class="video-small">
+                <img src="https://img.youtube.com/vi/kpmeX_bImkI/mqdefault.jpg" 
+                    class="vid-s" 
+                onclick="cambioVideoYoutube('kpmeX_bImkI', 'NUEVA AVENTURA')"
+                style="cursor: pointer;" />
+                <span class="video-title">NUEVA AVENTURA</span>
+            </div>
+
+
+            <div class="video-small">
+    <img 
+        src="https://img.youtube.com/vi/HOaEwg5b3G0/mqdefault.jpg" 
+        class="vid-s" 
+        onmouseover="this.style.opacity = '0.8'" 
+        onmouseout="this.style.opacity = '1'" 
+        onclick="cambioVideoYoutube('HOaEwg5b3G0', 'ME TRAEN REGALOS!')"
+        style="cursor: pointer;" />
+    <span class="video-title">| ME TRAEN REGALOS!</span>
+            </div>
+
+
+            <div class="video-small">
+    <img 
+        src="https://img.youtube.com/vi/IVcwjE4OI24/mqdefault.jpg" 
+        class="vid-s" 
+        onclick="cambioVideoYoutube('IVcwjE4OI24', 'FINAL, HOLA ALAN')"
+        style="cursor: pointer;"
+    />
+    <span class="video-title">FINAL, HOLA ALAN</span>
+            </div>
+
+
+        <div class="video-small">
+    <img 
+        src="https://img.youtube.com/vi/sa2UemTi6zI/mqdefault.jpg" 
+        class="vid-s" 
+        onclick="cambioVideoYoutube('sa2UemTi6zI', 'EL LEVIATÁN CONGELADO')"
+        style="cursor: pointer;"
+    />
+    <span class="video-title">EL LEVIATÁN CONGELADO</span>
+||      </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
