@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>onchange</title>
+</head>
+<body>
+<nav>
+    <div class="navegator">
+    <div class="nav-title">
+        <h1>DojoWeather</h1>
+    </div>
+    <div class="nav-list">
+        <ul>
+        <li><h2><a href="#" onclick="infoMeteor()">Burbank</a></h2></li>
+        <li><h2><a href="#" onclick="infoMeteor()">Chicago</a></h2></li>
+        <li><h2><a href="#" onclick="infoMeteor()">Dallas</a></h2></li>
+        </ul>
+    </div>
+    </div>
+</nav>
+<div class="flex-container">
+    <div class="header">
+    <div class="header-title">
+        <h2>San Jose</h2>
+    </div>
+    <div class="list">
+        <p>Show temperature in</p>
+        <select name="change-degrees" id="conversion" onchange="convertirTemp(this)">
+        <option value="C">°C</option>
+        <option value="F">°F</option>
+        </select>
+    </div>
+    </div>
+    <div class="weather">
+    <div class="cards">
+        <h2>Today</h2>
+        <img src="img/some_clouds.png" alt="some-rain">
+        <p>some rain</p>
+        <div class="degrees">
+        <h2 class="hottest">24°</h2>
+        <h2 class="coldest">18°</h2>
+        </div>
+    </div>
+    <div class="cards">
+        <h2>Tomorrow</h2>
+        <img src="img/some_sun.png" alt="some-sun">
+        <p>some sun</p>
+        <div class="degrees">
+        <h2 class="hottest">27°</h2>
+        <h2 class="coldest">19°</h2>
+        </div>
+    </div>
+    <div class="cards">
+        <h2>Friday</h2>
+        <img src="img/some_rain.png" alt="some-clouds">
+        <p>some clouds</p>
+        <div class="degrees">
+        <h2 class="hottest">21°</h2>
+        <h2 class="coldest">16°</h2>
+        </div>
+    </div>
+    <div class="cards">
+        <h2>Saturday</h2>
+        <img src="img/some_sun.png" alt="some-sun">
+        <p>some sun</p>
+        <div class="degrees">
+        <h2 class="hottest">26°</h2>
+        <h2 class="coldest">21°</h2>
+        </div>
+    </div>
+    </div>
+    <div class="galletitas">
+    <img src="img/cookie.png" alt="cookie">
+    <div class="about">
+        <h3>Stop! Cookie time</h3>
+        <p>We use cookies (sadly not the edible ones) to personalize content and ads, 
+        to provide social media features and to analyse our traffic. <a href="#">Read more</a></p>
+    </div>
+    <div class="btn">
+        <button type="button" onclick="hide()">I Accept</button>
+    </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
