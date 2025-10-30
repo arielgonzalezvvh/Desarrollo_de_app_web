@@ -1,559 +1,734 @@
 <!DOCTYPE html>
+<!-- Indica que el documento usa HTML5 -->
 <html lang="es">
+|<!-- Raíz del documento; el contenido está en español -->
+
 <head>
-<meta charset="UTF-8" />
-<meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0" />
-<title>Ariel González — Portafolio + CV</title>
-<meta
-    name="description"
-    content="Portafolio + CV de Ariel Alejandro González Esparza. HTML, CSS, JS, SQL, C++, Linux." />
+    <!-- Cabecera: metadatos, títulos y enlaces a recursos -->
+    <meta charset="UTF-8" />
+    <!-- Codificación UTF-8 para tildes/ñ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ajuste responsive en móviles -->
+    <title>Ariel González — Portafolio + CV</title>
+    <!-- Título de la pestaña del navegador -->
+    <meta name="description"
+        content="Portafolio + CV de Ariel Alejandro González Esparza. HTML, CSS, JS, SQL, C++, Linux." />
+    <!-- Descripción para buscadores -->
 
-<!-- Bootstrap + Icons + Fuentes -->
-<link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet" />
-<link
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-    rel="stylesheet" />
-<link
-    rel="preconnect"
-    href="https://fonts.googleapis.com" />
-<link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin />
-<link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Montserrat:wght@400;700&display=swap"
-    rel="stylesheet" />
+    <!-- ========== Librerías externas ========== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- CSS de Bootstrap para grillas/estilos básicos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Iconos de Bootstrap -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- Preconexión para acelerar carga de fuentes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Preconexión al host de fuentes con CORS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <!-- Fuentes Poppins/Montserrat -->
 
-<!-- CSS propio -->
-<link
-    rel="stylesheet"
-    href="static/css/style.css" />
+    <!-- ========== CSS propio ========== -->
+    <link rel="stylesheet" href="static/css/style.css" />
+    <!-- Tu hoja de estilos principal -->
 </head>
+<!-- Fin de la cabecera -->
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100">
+    <!-- Cuerpo del documento; activa "scrollspy" de Bootstrap -->
 
-<!-- NAV LATERAL (aparece al hover) -->
-<nav class="navbar" id="navbar" aria-label="Barra lateral">
-    <div class="navbarPadre text-center">
+    <!-- ========== NAV LATERAL (aparece al hover) ========== -->
+    <nav class="navbar" id="navbar" aria-label="Barra lateral">
+        <!-- Barra fija a la izquierda con accesible aria-label -->
+        <div class="navbarPadre text-center">
+            <!-- Contenedor interno del nav, centrado -->
 
-    <a href="#home" class="d-block p-3 text-decoration-none text-white">
-        <img
-        class="imagenPerfil"
-        src="resources/IMG_20250203_133132.jpg"
-        alt="Foto de perfil de Ariel"
-        loading="lazy" />
-        <h4 class="mt-2">Ariel A. González</h4>
-        <p class="small">PROGRAMADOR JUNIOR</p>
-    </a>
+            <a href="#home" class="d-block p-3 text-decoration-none text-white">
+                <!-- Botón/branding que lleva a la sección Home -->
+                <img class="imagenPerfil" src="resources/IMG_20250203_133132.jpg" alt="Foto de perfil de Ariel"
+                    loading="lazy" />
+                <!-- Foto de perfil circular (carga diferida) -->
+                <h4 class="mt-2">Ariel A. González</h4>
+                <!-- Nombre del autor del portafolio -->
+                <p class="small">PROGRAMADOR JUNIOR</p>
+                <!-- Rol breve -->
+            </a>
+            <!-- Cierre branding -->
 
-    <ul class="nav nav-pills flex-column w-100">
-        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="#clients">Clients</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-        <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
-        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-        <li class="nav-item"><a class="nav-link" href="#references">References</a></li>
-        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#organizations">Organizations</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-    </ul>
-
-    <div class="pt-3">
-        <a
-        href="https://github.com/arielgonzalezvvh/Desarrollo_de_app_web"
-        target="_blank"
-        class="nav-link text-secondary">
-        <i class="bi bi-github"></i> GitHub
-        </a>
-    </div>
-    </div>
-</nav>
-
-<!-- CONTENIDO PRINCIPAL -->
-<main>
-
-    <!-- HOME -->
-    <section id="home" class="home-section d-flex align-items-center">
-    <div class="container">
-        <div class="row align-items-center justify-content-center g-4">
-          <div class="col-12 col-lg-7 text-center text-lg-start">
-            <p class="greeting">¡Hola, soy Ariel!</p>
-            <h1>
-              Desarrollador Web Junior con foco en
-              <span class="highlight">Bases de Datos</span>
-            </h1>
-            <p class="tagline">
-              HTML · CSS · JavaScript · SQL · C++ · Linux (armado/desarmado de PCs)
-            </p>
-
-            <ul class="list-inline texto-sutil small mt-2">
-              <li class="list-inline-item">RUT: 22.466.903-8</li>
-              <li class="list-inline-item">Nac.: 03-08-2007</li>
-              <li class="list-inline-item">Chile · Urbano VI Nº 10517</li>
+            <ul class="nav nav-pills flex-column w-100">
+                <!-- Lista vertical de enlaces del menú -->
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <!-- Link a sección Home -->
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <!-- Link a sección Sobre mí -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <!-- Link a sección Servicios -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#clients">Clients</a>
+                </li>
+                <!-- Link a sección Experiencias -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <!-- Link a sección Habilidades -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <!-- Link a sección Educación -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#certifications">Certifications</a>
+                </li>
+                <!-- Link a sección Certificaciones (placeholder) -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <!-- Link a sección Experiencia/Proyectos -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#references">References</a>
+                </li>
+                <!-- Link a Referencias -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <!-- Link a Portafolio -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#organizations">Organizations</a>
+                </li>
+                <!-- Link a Organizaciones (placeholder) -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <!-- Link a Contacto -->
             </ul>
+            <!-- Fin de la lista -->
 
-            <div class="mt-4">
-              <a
-                href="#portfolio"
-                class="btn btn-primary btn-lg me-3"
-                onmouseover="resaltarBoton(this)"
-                onmouseout="restaurarBoton(this)"
-                onclick="cambiarTexto(this)">
-                Ver Proyectos
-              </a>
-
-              <a
-                href="#contact"
-                class="btn btn-outline-light btn-lg">
-                Contáctame
-              </a>
+            <div class="pt-3">
+                <!-- Zona inferior con link a GitHub -->
+                <a href="https://github.com/arielgonzalezvvh/Desarrollo_de_app_web" target="_blank"
+                    class="nav-link text-secondary">
+                    <!-- Abre GitHub en pestaña nueva -->
+                    <i class="bi bi-github"></i> GitHub
+                    <!-- Icono + texto GitHub -->
+                </a>
             </div>
-          </div>
+            <!-- Fin zona GitHub -->
+        </div>
+        <!-- Fin contenedor interno -->
+    </nav>
+    <!-- Fin nav lateral -->
 
-          <div class="col-12 col-lg-5 d-flex justify-content-center">
-            <div class="perfil-contenedor">
-              <img
-                src="resources/IMG_20250203_133132.jpg"
-                alt="Retrato de Ariel"
-                class="img2"
-                loading="lazy"
-                onmouseover="agrandar(this)"
-                onmouseout="reducir(this)" />
-              <img
-                src="resources/html.png"
-                alt="Logo HTML5"
-                class="img-pequeña pequeña1"
-                loading="lazy" />
-              <img
-                src="resources/css.png"
-                alt="Logo CSS3"
-                class="img-pequeña pequeña2"
-                loading="lazy" />
-              <img
-                src="resources/js.png"
-                alt="Logo JS"
-                class="img-pequeña pequeña3"
-                loading="lazy" />
+    <!-- ========== CONTENIDO PRINCIPAL ========== -->
+    <main>
+        <!-- Contenedor del contenido fuera del nav -->
+
+        <!-- ========== HOME ========== -->
+        <section id="home" class="home-section d-flex align-items-center">
+            <!-- Sección de portada con fondo y CTA -->
+            <div class="container">
+                <!-- Contenedor Bootstrap para márgenes -->
+                <div class="row align-items-center justify-content-center g-4">
+                    <!-- Fila con dos columnas alineadas -->
+                    <div class="col-12 col-lg-7 text-center text-lg-start">
+                        <!-- Columna de textos (full móvil / 7/12 desktop) -->
+                        <p class="greeting">¡Hola, soy Ariel!</p>
+                        <!-- Saludo introductorio -->
+                        <h1>
+                            <!-- Título principal -->
+                            Desarrollador Web Junior con foco en
+                            <span class="highlight">Bases de Datos</span>
+                            <!-- Palabra destacada en verde -->
+                        </h1>
+                        <p class="tagline">
+                            <!-- Subtítulo con stack -->
+                            HTML · CSS · JavaScript · SQL · C++ · Linux (armado/desarmado de
+                            PCs)
+                        </p>
+
+                        <ul class="list-inline texto-sutil small mt-2">
+                            <!-- Datos personales como lista horizontal -->
+                            <li class="list-inline-item">RUT: 22.466.903-8</li>
+                            <!-- RUT -->
+                            <li class="list-inline-item">Nac.: 03-08-2007</li>
+                            <!-- Fecha de nacimiento -->
+                            <li class="list-inline-item">Chile · Urbano VI Nº 10517</li>
+                            <!-- Ubicación general -->
+                        </ul>
+                        <!-- Fin datos personales -->
+
+                        <div class="mt-4">
+                            <!-- Botonera de acciones -->
+                            <a href="#portfolio" class="btn btn-primary btn-lg me-3" onmouseover="resaltarBoton(this)"
+                                onmouseout="restaurarBoton(this)" onclick="cambiarTexto(this)">Ver Proyectos</a>
+                            <!-- Botón CTA a Portafolio con efectos JS -->
+                            <a href="#contact" class="btn btn-outline-light btn-lg">Contáctame</a>
+                            <!-- Botón secundario a Contacto -->
+                        </div>
+                        <!-- Fin botonera -->
+                    </div>
+                    <!-- Fin columna textos -->
+
+                    <div class="col-12 col-lg-5 d-flex justify-content-center">
+                        <!-- Columna de foto + “órbitas” -->
+                        <div class="perfil-contenedor">
+                            <!-- Marco de la foto e iconos orbitando -->
+                            <img src="resources/IMG_20250203_133132.jpg" alt="Retrato de Ariel" class="img2"
+                                loading="lazy" onmouseover="agrandar(this)" onmouseout="reducir(this)" />
+                            <!-- Foto redonda con hover -->
+                            <img src="resources/html.png" alt="Logo HTML5" class="img-pequeña pequeña1"
+                                loading="lazy" />
+                            <!-- Orbita 1 (HTML) -->
+                            <img src="resources/css.png" alt="Logo CSS3" class="img-pequeña pequeña2" loading="lazy" />
+                            <!-- Orbita 2 (CSS) -->
+                            <img src="resources/js.png" alt="Logo JS" class="img-pequeña pequeña3" loading="lazy" />
+                            <!-- Orbita 3 (JS) -->
+                        </div>
+                        <!-- Fin marco perfil -->
+                    </div>
+                    <!-- Fin columna imagen -->
+                </div>
+                <!-- Fin fila -->
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            <!-- Fin container -->
+        </section>
+        <!-- Fin sección HOME -->
 
-    <!-- ABOUT -->
-    <section id="about" class="container py-5">
-      <h2 class="seccion-titulo text-center">Sobre mí</h2>
+        <!-- ========== ABOUT ========== -->
+        <section id="about" class="container py-5">
+            <!-- Sección “Sobre mí” con padding vertical -->
+            <h2 class="seccion-titulo text-center">Sobre mí</h2>
+            <!-- Título centrado -->
 
-      <div class="row align-items-center justify-content-center g-5">
-        <div class="col-12 col-lg-5 d-flex justify-content-center">
-          <div class="about-transicion">
-            <img src="resources/rasbery.webp" class="img-sobreMi" alt="Ariel estudiando" loading="lazy" />
-            <img src="resources/spotify.webp" class="img-sobreMi" alt="Proyecto en equipo" loading="lazy" />
-            <img src="resources/oss inventory.webp" class="img-sobreMi" alt="Taller de hardware" loading="lazy" />
-          </div>
-        </div>
+            <div class="row align-items-center justify-content-center g-5">
+                <!-- Fila con galería + texto -->
+                <div class="col-12 col-lg-5 d-flex justify-content-center">
+                    <!-- Columna de carrusel de imágenes -->
+                    <div class="about-transicion">
+                        <!-- Contenedor con efecto de transición -->
+                        <img src="resources/rasbery.webp" class="img-sobreMi" alt="Ariel estudiando" loading="lazy" />
+                        <!-- Foto 1 del carrusel -->
+                        <img src="resources/spotify.webp" class="img-sobreMi" alt="Proyecto en equipo" loading="lazy" />
+                        <!-- Foto 2 del carrusel -->
+                        <img src="resources/oss inventory.webp" class="img-sobreMi" alt="Taller de hardware"
+                            loading="lazy" />
+                        <!-- Foto 3 del carrusel -->
+                    </div>
+                    <!-- Fin contenedor de transición -->
+                </div>
+                <!-- Fin columna imágenes -->
 
-        <div class="col-12 col-lg-7">
-          <p class="lead text-center text-lg-start">
-           Soy un programador junior con conocimientos en desarrollo de software a nivel básico e intermedio. Puedo crear programas y rutinas de complejidad baja y media, trabajando con estructuras de datos y bases de datos, según lo que la empresa necesite.
-Tengo habilidades en SQL y experiencia en instalar y utilizar sistemas de información para recopilar y organizar datos de manera eficiente. Además, conozco Linux y tengo experiencia en el armado y mantenimiento de computadores, lo que me permite realizar tareas técnicas de manera completa.
-
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section id="services" class="container py-5">
-      <h2 class="seccion-titulo text-center">Servicios</h2>
-
-      <p class="text-center texto-sutil mb-4">
-        Apoyos y prácticas supervisadas.
-      </p>
-
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div
-            class="carta-oscura p-4 h-100"
-            onmouseover="elevarCarta(this)"
-            onmouseout="bajarCarta(this)">
-            <h5>Maquetación Web</h5>
-            <p>Maquetas responsivas con HTML, CSS y Bootstrap.</p>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div
-            class="carta-oscura p-4 h-100"
-            onmouseover="elevarCarta(this)"
-            onmouseout="bajarCarta(this)">
-            <h5>Interactividad JS</h5>
-            <p>Eventos, DOM y componentes de UI con JavaScript.</p>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div
-            class="carta-oscura p-4 h-100"
-            onmouseover="elevarCarta(this)"
-            onmouseout="bajarCarta(this)">
-            <h5>SQL Básico</h5>
-            <p>Consultas, modelado inicial y scripts de prueba.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CLIENTS -->
-    <section id="clients" class="py-5 bg-white">
-      <div class="container">
-        <h2 class="seccion-titulo text-center text-dark">Experiencias y Pasantías</h2>
-
-        <div class="row text-center g-4 mt-4">
-          <div class="col-md-6">
-            <div class="colaboracion-card p-4 shadow-sm">
-              <h4>Feria TP</h4>
-              <p>Creación de dos proyectos: uno que implique la conexión de un servidor en Linux y Windows, y otro que trabaje con una Raspberry Pi y un sensor PIR. </p>
+                <div class="col-12 col-lg-7">
+                    <!-- Columna de descripción -->
+                    <p class="lead">
+                        <!-- Párrafo destacado y responsive -->
+                        Soy un programador junior con conocimientos en desarrollo de
+                        software a nivel básico e intermedio. Puedo crear programas y
+                        rutinas de complejidad baja y media, trabajando con estructuras de
+                        datos y bases de datos, según lo que la empresa necesite. Tengo
+                        habilidades en SQL y experiencia en instalar y utilizar sistemas
+                        de información para recopilar y organizar datos de manera
+                        eficiente. Además, conozco Linux y tengo experiencia en el armado
+                        y mantenimiento de computadores, lo que me permite realizar tareas
+                        técnicas de manera completa.
+                    </p>
+                    <!-- Fin del párrafo -->
+                </div>
+                <!-- Fin columna texto -->
             </div>
-          </div>
+            <!-- Fin fila -->
+        </section>
+        <!-- Fin sección ABOUT -->
 
-          <div class="col-md-6">
-            <div class="colaboracion-card p-4 shadow-sm">
-              <h4>Alternancia en inacap</h4>
-              <p>Programar un juego de Piedra, Papel o Tijeras con almacenamiento de resultados en una base de datos OracleDB.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        <!-- ========== SERVICES ========== -->
+        <section id="services" class="container py-5">
+            <!-- Sección de servicios/ofertas -->
+            <h2 class="seccion-titulo text-center">Servicios</h2>
+            <!-- Título -->
+            <p class="text-center texto-sutil mb-4">
+                Apoyos y prácticas supervisadas.
+            </p>
+            <!-- Descripción breve -->
 
-    <!-- SKILLS -->
-    <section id="skills" class="container py-5">
-      <h2 class="seccion-titulo text-center">Habilidades</h2>
-
-      <h3 class="text-center mb-4">Tecnologías</h3>
-
-      <div class="row g-4 text-center">
-        <div class="col-md-3 col-6">
-          <div
-            class="skill-card"
-            onclick="toggleDesc(this)"
-            onmouseover="agrandarElemento(this)"
-            onmouseout="restaurarElemento(this)">
-            <i class="bi bi-filetype-html display-6 highlight"></i>
-            <p class="mt-2">HTML5</p>
-            <div class="texto-habilidad">Estructuras semánticas y accesibilidad.</div>
-          </div>
-        </div>
-
-        <div class="col-md-3 col-6">
-          <div
-            class="skill-card"
-            onclick="toggleDesc(this)"
-            onmouseover="agrandarElemento(this)"
-            onmouseout="restaurarElemento(this)">
-            <i class="bi bi-filetype-css display-6 highlight"></i>
-            <p class="mt-2">CSS3</p>
-            <div class="texto-habilidad">Flexbox, Grid y responsividad.</div>
-          </div>
-        </div>
-
-        <div class="col-md-3 col-6">
-          <div
-            class="skill-card"
-            onclick="toggleDesc(this)"
-            onmouseover="agrandarElemento(this)"
-            onmouseout="restaurarElemento(this)">
-            <i class="bi bi-braces display-6 highlight"></i>
-            <p class="mt-2">JavaScript</p>
-            <div class="texto-habilidad">DOM, eventos y componentes UI.</div>
-          </div>
-        </div>
-
-        <div class="col-md-3 col-6">
-          <div
-            class="skill-card"
-            onclick="toggleDesc(this)"
-            onmouseover="agrandarElemento(this)"
-            onmouseout="restaurarElemento(this)">
-            <i class="bi bi-database-check display-6 highlight"></i>
-            <p class="mt-2">SQL</p>
-            <div class="texto-habilidad">Consultas y modelado básico.</div>
-          </div>
-        </div>
-      </div>
-
-      <h3 class="text-center mt-5 mb-4">Habilidades blandas</h3>
-
-      <div class="row g-3">
-        <div class="col-md-4">
-          <span class="badge bg-secondary p-2 w-100">Trabajo en equipo</span>
-        </div>
-        <div class="col-md-4">
-          <span class="badge bg-secondary p-2 w-100">Comunicación efectiva</span>
-        </div>
-        <div class="col-md-4">
-          <span class="badge bg-secondary p-2 w-100">Resolución de problemas</span>
-        </div>
+            <div class="row g-4">
+                <!-- Fila de 3 tarjetas -->
                 <div class="col-md-4">
-          <span class="badge bg-secondary p-2 w-100">Liderazgo</span>
-        </div>
+                    <!-- Columna 1 -->
+                    <div class="carta-oscura p-4 h-100" onmouseover="elevarCarta(this)" onmouseout="bajarCarta(this)">
+                        <!-- Tarjeta con hover JS -->
+                        <h5>Maquetación Web</h5>
+                        <!-- Nombre del servicio -->
+                        <p>Maquetas responsivas con HTML, CSS y Bootstrap.</p>
+                        <!-- Detalle -->
+                    </div>
+                </div>
 
                 <div class="col-md-4">
-          <span class="badge bg-secondary p-2 w-100">Toma de decisiones</span>
-        </div>
+                    <!-- Columna 2 -->
+                    <div class="carta-oscura p-4 h-100" onmouseover="elevarCarta(this)" onmouseout="bajarCarta(this)">
+                        <!-- Tarjeta con hover JS -->
+                        <h5>Interactividad JS</h5>
+                        <!-- Nombre del servicio -->
+                        <p>Eventos, DOM y componentes de UI con JavaScript.</p>
+                        <!-- Detalle -->
+                    </div>
+                </div>
 
                 <div class="col-md-4">
-          <span class="badge bg-secondary p-2 w-100">Organización y gestión del tiempo</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section id="education" class="seccion-oscura">
-      <img
-        src="resources/educacion-bg.png"
-        alt="Banda educación"
-        class="banda-bg"
-        loading="lazy" />
-
-      <div class="container py-5 position-relative">
-       <h2 class="seccion-titulo text-center">Educación</h2>
-
-<ul class="timeline mt-3">
-  <li>
-    <h6>Enseñanza Media (2022-2025)</h6>
-    <p>Liceo Comercial Vate Vicente Huidobro - Especialidad en Programación.</p>
-  </li>
-  <li>
-    <h6>Enseñanza Básica (2012-2021)</h6>
-    <p>Colegio Óscar Castro.</p>
-  </li>
-</ul>
-
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- CERTIFICATIONS -->
-  
-
-    <!-- EXPERIENCE -->
-    <section id="experience" class="seccion">
-      <img
-        src="resources/demo.png"
-        alt="Banda experiencia"
-        class="banda-bg"
-        loading="lazy" />
-
-      <div class="container py-5 position-relative">
-        <h2 class="seccion-titulo text-center">Experiencia (Proyectos)</h2>
-
-        <div class="text-center mb-4">
-          <label for="filtro-experiencia" class="form-label">Filtrar:</label>
-          <select
-            id="filtro-experiencia"
-            class="form-select w-auto d-inline-block"
-            onchange="filtrarTarjetas(this)">
-            <option value="todas" selected>Todas</option>
-            <option value="linux">Linux</option>
-            <option value="domotica">Domótica</option>
-            <option value="web">Web</option>
-          </select>
-        </div>
-
-        <div class="row" id="grid-experiencia">
-          <div class="col-md-4 tarjeta-portfolio" data-tipo="linux">
-            <div class="card carta-oscura h-100">
-              <div class="card-body">
-                <h5 class="card-title">Servidor Linux — Inventario</h5>
-                <p class="card-text">Servidor que mostraba componentes HW/SW (tipo OCC inventory).</p>
-                <a
-                  class="btn btn-verde"
-                  target="_blank"
-                  rel="noopener"
-                  href="https://github.com/arielgonzalezvvh/Desarrollo_de_app_web">
-                  Repositorio
-                </a>
-              </div>
+                    <!-- Columna 3 -->
+                    <div class="carta-oscura p-4 h-100" onmouseover="elevarCarta(this)" onmouseout="bajarCarta(this)">
+                        <!-- Tarjeta con hover JS -->
+                        <h5>SQL Básico</h5>
+                        <!-- Nombre del servicio -->
+                        <p>Consultas, modelado inicial y scripts de prueba.</p>
+                        <!-- Detalle -->
+                    </div>
+                </div>
             </div>
-          </div>
+            <!-- Fin fila -->
+        </section>
+        <!-- Fin sección SERVICES -->
 
-          <div class="col-md-4 tarjeta-portfolio" data-tipo="domotica">
-            <div class="card carta-oscura h-100">
-              <div class="card-body">
-                <h5 class="card-title">Domótica educativa</h5>
-                <p class="card-text">Control de luces/equipos con sensores PIR/LDR y relé.</p>
-                <a
-                  class="btn btn-verde"
-                  target="_blank"
-                  rel="noopener"
-                  href="https://github.com/arielgonzalezvvh/Desarrollo_de_app_web">
-                  Repositorio
-                </a>
-              </div>
+        <!-- ========== CLIENTS (Experiencias) ========== -->
+        <section id="clients" class="py-5 bg-white">
+            <!-- Bloque con fondo claro para contraste -->
+            <div class="container">
+                <!-- Contenedor Bootstrap -->
+                <h2 class="seccion-titulo text-center text-dark">
+                    Experiencias y Pasantías
+                </h2>
+                <!-- Título en oscuro -->
+
+                <div class="row text-center g-4 mt-4">
+                    <!-- Fila de dos tarjetas -->
+                    <div class="col-md-6">
+                        <!-- Columna 1 -->
+                        <div class="colaboracion-card p-4 shadow-sm">
+                            <!-- Tarjeta clara con sombra suave -->
+                            <h4>Feria TP</h4>
+                            <!-- Título de experiencia -->
+                            <p>
+                                Creación de dos proyectos: uno que implique la conexión de un
+                                servidor en Linux y Windows, y otro que trabaje con una
+                                Raspberry Pi y un sensor PIR.
+                            </p>
+                            <!-- Descripción -->
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <!-- Columna 2 -->
+                        <div class="colaboracion-card p-4 shadow-sm">
+                            <!-- Tarjeta clara con sombra suave -->
+                            <h4>Alternancia en inacap</h4>
+                            <!-- Título de experiencia -->
+                            <p>
+                                Programar un juego de Piedra, Papel o Tijeras con
+                                almacenamiento de resultados en una base de datos OracleDB.
+                            </p>
+                            <!-- Descripción -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin fila -->
             </div>
-          </div>
+            <!-- Fin container -->
+        </section>
+        <!-- Fin sección CLIENTS -->
 
-          <div class="col-md-4 tarjeta-portfolio" data-tipo="web">
-            <div class="card carta-oscura h-100">
-              <div class="card-body">
-                <h5 class="card-title">Mapa de ciclovías</h5>
-                <p class="card-text">Sitio informativo con mapa, leyes y consejos.</p>
-                <a
-                  class="btn btn-verde"
-                  target="_blank"
-                  rel="noopener"
-                  href="https://github.com/arielgonzalezvvh/Desarrollo_de_app_web">
-                  Repositorio
-                </a>
-              </div>
+        <!-- ========== SKILLS ========== -->
+        <section id="skills" class="container py-5">
+            <!-- Sección de habilidades -->
+            <h2 class="seccion-titulo text-center">Habilidades</h2>
+            <!-- Título -->
+            <h3 class="text-center mb-4">Tecnologías</h3>
+            <!-- Subtítulo -->
+
+            <div class="row g-4 text-center">
+                <!-- Fila de 4 skills -->
+                <div class="col-md-3 col-6">
+                    <!-- Columna 1 (HTML) -->
+                    <div class="skill-card" onclick="toggleDesc(this)" onmouseover="agrandarElemento(this)"
+                        onmouseout="restaurarElemento(this)">
+                        <!-- Tarjeta con overlay -->
+                        <i class="bi bi-filetype-html display-6 highlight"></i>
+                        <!-- Ícono tipo archivo HTML -->
+                        <p class="mt-2">HTML5</p>
+                        <!-- Nombre de la skill -->
+                        <div class="texto-habilidad">
+                            Estructuras semánticas y accesibilidad.
+                        </div>
+                        <!-- Texto oculto que aparece -->
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <!-- Columna 2 (CSS) -->
+                    <div class="skill-card" onclick="toggleDesc(this)" onmouseover="agrandarElemento(this)"
+                        onmouseout="restaurarElemento(this)">
+                        <!-- Tarjeta con overlay -->
+                        <i class="bi bi-filetype-css display-6 highlight"></i>
+                        <!-- Ícono tipo archivo CSS -->
+                        <p class="mt-2">CSS3</p>
+                        <!-- Nombre de la skill -->
+                        <div class="texto-habilidad">Flexbox, Grid y responsividad.</div>
+                        <!-- Texto oculto que aparece -->
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <!-- Columna 3 (JS) -->
+                    <div class="skill-card" onclick="toggleDesc(this)" onmouseover="agrandarElemento(this)"
+                        onmouseout="restaurarElemento(this)">
+                        <!-- Tarjeta con overlay -->
+                        <i class="bi bi-braces display-6 highlight"></i>
+                        <!-- Ícono llaves (JS) -->
+                        <p class="mt-2">JavaScript</p>
+                        <!-- Nombre de la skill -->
+                        <div class="texto-habilidad">DOM, eventos y componentes UI.</div>
+                        <!-- Texto oculto que aparece -->
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <!-- Columna 4 (SQL) -->
+                    <div class="skill-card" onclick="toggleDesc(this)" onmouseover="agrandarElemento(this)"
+                        onmouseout="restaurarElemento(this)">
+                        <!-- Tarjeta con overlay -->
+                        <i class="bi bi-database-check display-6 highlight"></i>
+                        <!-- Ícono base de datos -->
+                        <p class="mt-2">SQL</p>
+                        <!-- Nombre de la skill -->
+                        <div class="texto-habilidad">Consultas y modelado básico.</div>
+                        <!-- Texto oculto que aparece -->
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
+            <!-- Fin fila skills -->
 
-      </div>
-    </section>
+            <h3 class="text-center mt-5 mb-4">Habilidades blandas</h3>
+            <!-- Subtítulo soft skills -->
 
-    <!-- REFERENCES -->
-    <section id="references" class="container py-5">
-      <h2 class="seccion-titulo text-center">References</h2>
-
-      <div class="row justify-content-center">
-        <div class="col-md-8 text-center">
-          <div class="card shadow-sm p-4">
-            <div class="card-body">
-              <blockquote class="blockquote">
-                <footer class="blockquote-footer">Docente / Mentor</footer>
-                <cite>Disponible a solicitud.</cite>
-              </blockquote>
-
-              <button
-                class="btn btn-outline-primary mt-3"
-                onclick="mostrarContacto(this, 'arielgonzalez@liceovvh.cl')">
-                Solicitar Contacto
-              </button>
-
-              <p id="infoContacto" class="mt-3" style="display:none;"></p>
+            <div class="row g-3">
+                <!-- Fila de badges -->
+                <div class="col-md-4">
+                    <span class="badge bg-secondary p-2 w-100">Trabajo en equipo</span>
+                </div>
+                <!-- Badge 1 -->
+                <div class="col-md-4">
+                    <span class="badge bg-secondary p-2 w-100">Comunicación efectiva</span>
+                </div>
+                <!-- Badge 2 -->
+                <div class="col-md-4">
+                    <span class="badge bg-secondary p-2 w-100">Resolución de problemas</span>
+                </div>
+                <!-- Badge 3 -->
+                <div class="col-md-4">
+                    <span class="badge bg-secondary p-2 w-100">Liderazgo</span>
+                </div>
+                <!-- Badge 4 -->
+                <div class="col-md-4">
+                    <span class="badge bg-secondary p-2 w-100">Toma de decisiones</span>
+                </div>
+                <!-- Badge 5 -->
+                <div class="col-md-4">
+                    <span class="badge bg-secondary p-2 w-100">Organización y gestión del tiempo</span>
+                </div>
+                <!-- Badge 6 -->
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            <!-- Fin fila badges -->
+        </section>
+        <!-- Fin sección SKILLS -->
 
-    <!-- PORTFOLIO -->
-    <section id="portfolio" class="py-5 bg-white">
-      <div class="container">
-        <h2 class="seccion-titulo text-center text-dark">Mi Portafolio</h2>
-        <p class="text-center text-muted mb-4">Enlaces a repos de GitHub y demos.</p>
+        <!-- ========== EDUCATION ========== -->
+        <section id="education" class="seccion-oscura">
+            <!-- Sección oscura con banda de fondo -->
+            <img src="resources/educacion-bg.png" alt="Banda educación" class="banda-bg" loading="lazy" />
+            <!-- Imagen decorativa en la parte superior -->
 
-        <div
-          id="grid-portfolio"
-          class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-          <!-- Se llena desde JS con duplicados de Experience -->
-        </div>
+            <div class="container py-5 position-relative">
+                <!-- Contenedor con padding -->
+                <h2 class="seccion-titulo text-center">Educación</h2>
+                <!-- Título de sección -->
 
-        <div class="text-center mt-3">
-          <button
-            class="btn btn-dark me-2"
-            onclick="agregarProyectoDemo(this)">
-            Añadir tarjeta demo
-          </button>
+                <ul class="timeline mt-3">
+                    <!-- Línea vertical estilo “timeline” -->
+                    <li>
+                        <!-- Item 1 -->
+                        <h6>Enseñanza Media (2022-2025)</h6>
+                        <!-- Periodo de estudios -->
+                        <p>
+                            Liceo Comercial Vate Vicente Huidobro - Especialidad en
+                            Programación.
+                        </p>
+                        <!-- Detalle -->
+                    </li>
+                    <li>
+                        <!-- Item 2 -->
+                        <h6>Enseñanza Básica (2012-2021)</h6>
+                        <!-- Periodo de estudios -->
+                        <p>Colegio Óscar Castro.</p>
+                        <!-- Detalle -->
+                    </li>
+                </ul>
+                <!-- Fin lista timeline -->
 
-          <button
-            class="btn btn-outline-dark"
-            onclick="vaciarPortfolio(this)">
-            Vaciar
-          </button>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- CONTACT -->
-    <section id="contact" class="container py-5">
-      <h2 class="seccion-titulo text-center">Contáctame</h2>
-
-      <p class="text-center texto-sutil mb-5">
-        ¿Tienes un proyecto en mente? Hablemos.
-      </p>
-
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <form
-            id="form-contacto"
-            class="shadow-sm p-4 rounded"
-            onsubmit="return enviarFormulario(event, this)">
-            <div class="mb-3">
-              <label for="nombre" class="form-label">Nombre</label>
-              <input
-                type="text"
-                id="nombre"
-                name="nombre"
-                class="form-control"
-                placeholder="Tu nombre" />
+                <!-- Nota: en tu versión había un </li> y </ul> extra; se han omitido para mantener el HTML válido -->
             </div>
+            <!-- Fin container educación -->
+        </section>
+        <!-- Fin sección EDUCATION -->
 
-            <div class="mb-3">
-              <label for="correo" class="form-label">Correo</label>
-              <input
-                type="email"
-                id="correo"
-                name="correo"
-                class="form-control"
-                placeholder="nombre@ejemplo.com" />
+        <!-- ========== CERTIFICATIONS (placeholder) ========== -->
+        <!-- Puedes añadir aquí tarjetas/lista de certificaciones cuando las tengas -->
+
+        <!-- ========== EXPERIENCE ========== -->
+        <section id="experience" class="seccion">
+            <!-- Sección de proyectos/experiencia -->
+            <img src="resources/demo.png" alt="Banda experiencia" class="banda-bg" loading="lazy" />
+            <!-- Banda decorativa superior -->
+
+            <div class="container py-5 position-relative">
+                <!-- Contenedor principal -->
+                <h2 class="seccion-titulo text-center">Experiencia (Proyectos)</h2>
+                <!-- Título -->
+
+                <div class="text-center mb-4">
+                    <!-- Filtro por categoría -->
+                    <label for="filtro-experiencia" class="form-label">Filtrar:</label>
+                    <!-- Etiqueta del select -->
+                    <select id="filtro-experiencia" class="form-select w-auto d-inline-block"
+                        onchange="filtrarTarjetas(this)">
+                        <!-- Select que dispara filtro -->
+                        <option value="todas" selected>Todas</option>
+                        <!-- Opción: todas -->
+                        <option value="linux">Linux</option>
+                        <!-- Opción: Linux -->
+                        <option value="domotica">Domótica</option>
+                        <!-- Opción: Domótica -->
+                        <option value="web">Web</option>
+                        <!-- Opción: Web -->
+                    </select>
+                </div>
+                <!-- Fin filtro -->
+
+                <div class="row" id="grid-experiencia">
+                    <!-- Grilla de 3 tarjetas de proyectos -->
+                    <div class="col-md-4 tarjeta-portfolio" data-tipo="linux">
+                        <!-- Columna proyecto Linux -->
+                        <div class="card carta-oscura h-100">
+                            <!-- Tarjeta con estilo claro -->
+                            <div class="card-body">
+                                <!-- Contenido de la tarjeta -->
+                                <h5 class="card-title">Servidor Linux — Inventario</h5>
+                                <!-- Título del proyecto -->
+                                <p class="card-text">
+                                    Servidor que mostraba componentes HW/SW (tipo OCC
+                                    inventory).
+                                </p>
+                                <!-- Descripción -->
+                                <a class="btn btn-verde" target="_blank" rel="noopener"
+                                    href="https://github.com/arielgonzalezvvh/Desarrollo_de_app_web">Repositorio</a>
+                                <!-- Botón al repo -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 tarjeta-portfolio" data-tipo="domotica">
+                        <!-- Columna proyecto Domótica -->
+                        <div class="card carta-oscura h-100">
+                            <!-- Tarjeta con estilo claro -->
+                            <div class="card-body">
+                                <!-- Contenido -->
+                                <h5 class="card-title">Domótica educativa</h5>
+                                <!-- Título -->
+                                <p class="card-text">
+                                    Control de luces/equipos con sensores PIR/LDR y relé.
+                                </p>
+                                <!-- Descripción -->
+                                <a class="btn btn-verde" target="_blank" rel="noopener"
+                                    href="https://github.com/arielgonzalezvvh/Desarrollo_de_app_web">Repositorio</a>
+                                <!-- Botón repo -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 tarjeta-portfolio" data-tipo="web">
+                        <!-- Columna proyecto Web -->
+                        <div class="card carta-oscura h-100">
+                            <!-- Tarjeta con estilo claro -->
+                            <div class="card-body">
+                                <!-- Contenido -->
+                                <h5 class="card-title">Mapa de ciclovías</h5>
+                                <!-- Título -->
+                                <p class="card-text">
+                                    Sitio informativo con mapa, leyes y consejos.
+                                </p>
+                                <!-- Descripción -->
+                                <a class="btn btn-verde" target="_blank" rel="noopener"
+                                    href="https://github.com/arielgonzalezvvh/Desarrollo_de_app_web">Repositorio</a>
+                                <!-- Botón repo -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin grilla experiencia -->
             </div>
+            <!-- Fin container -->
+        </section>
+        <!-- Fin sección EXPERIENCE -->
 
-            <div class="mb-3">
-              <label for="asunto" class="form-label">Asunto</label>
-              <input
-                type="text"
-                id="asunto"
-                name="asunto"
-                class="form-control"
-                placeholder="Asunto del mensaje" />
+        <!-- ========== REFERENCES ========== -->
+        <section id="references" class="container py-5">
+            <!-- Sección de referencias -->
+            <h2 class="seccion-titulo text-center">References</h2>
+            <!-- Título -->
+
+            <div class="row justify-content-center">
+                <!-- Centra la tarjeta -->
+                <div class="col-md-8 text-center">
+                    <!-- Columna ancho medio -->
+                    <div class="card shadow-sm p-4">
+                        <!-- Tarjeta con sombra leve -->
+                        <div class="card-body">
+                            <!-- Contenido -->
+                            <blockquote class="blockquote">
+                                <!-- Cita/nota -->
+                                <footer class="blockquote-footer">Docente / Mentor</footer>
+                                <!-- Pie de la cita -->
+                                <cite>Disponible a solicitud.</cite>
+                                <!-- Aclaración de disponibilidad -->
+                            </blockquote>
+
+                            <button class="btn btn-outline-primary mt-3"
+                                onclick="mostrarContacto(this, 'arielgonzalez@liceovvh.cl')">
+                                Solicitar Contacto
+                            </button>
+                            <!-- Botón que revela email -->
+                            <p id="infoContacto" class="mt-3" style="display: none"></p>
+                            <!-- Contenedor del email oculto -->
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- Fin fila -->
+        </section>
+        <!-- Fin sección REFERENCES -->
 
-            <div class="mb-3">
-              <label for="mensaje" class="form-label">Mensaje</label>
-              <textarea
-                id="mensaje"
-                name="mensaje"
-                rows="5"
-                class="form-control"
-                placeholder="Tu mensaje..."></textarea>
+        <!-- ========== PORTFOLIO ========== -->
+        <section id="portfolio" class="py-5 bg-white">
+            <!-- Sección con fondo claro -->
+            <div class="container">
+                <!-- Contenedor -->
+                <h2 class="seccion-titulo text-center text-dark">Mi Portafolio</h2>
+                <!-- Título oscuro -->
+                <p class="text-center text-muted mb-4">
+                    Enlaces a repos de GitHub y demos.
+                </p>
+                <!-- Subtítulo -->
+
+                <div id="grid-portfolio" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <!-- Grilla que JS llenará -->
+                    <!-- Se llena desde JS con duplicados de Experience -->
+                </div>
+                <!-- Fin grilla -->
+
+                <div class="text-center mt-3">
+                    <!-- Botonera de gestión de demos -->
+                    <button class="btn btn-dark me-2" onclick="agregarProyectoDemo(this)">
+                        Añadir tarjeta demo
+                    </button>
+                    <!-- Agrega una tarjeta ejemplo -->
+                    <button class="btn btn-outline-dark" onclick="vaciarPortfolio(this)">
+                        Vaciar
+                    </button>
+                    <!-- Elimina todas las tarjetas -->
+                </div>
             </div>
+            <!-- Fin container -->
+        </section>
+        <!-- Fin sección PORTFOLIO -->
 
-            <button
-              type="submit"
-              class="btn btn-primary w-100 btn-lg"
-              onmouseover="resaltarBoton(this)"
-              onmouseout="restaurarBoton(this)">
-              Enviar
-            </button>
-          </form>
+        <!-- ========== CONTACT ========== -->
+        <section id="contact" class="container py-5">
+            <!-- Sección de contacto -->
+            <h2 class="seccion-titulo text-center">Contáctame</h2>
+            <!-- Título -->
+            <p class="text-center texto-sutil mb-5">
+                ¿Tienes un proyecto en mente? Hablemos.
+            </p>
+            <!-- Intro -->
 
-          <p class="text-center texto-sutil mt-3">
-            © <span id="anio"></span> Ariel Alejandro González Esparza
-          </p>
-        </div>
-      </div>
-    </section>
+            <div class="row justify-content-center">
+                <!-- Centra el formulario -->
+                <div class="col-lg-8">
+                    <!-- Columna ancha -->
+                    <form id="form-contacto" class="shadow-sm p-4 rounded"
+                        onsubmit="return enviarFormulario(event, this)">
+                        <!-- Form con validación JS -->
+                        <div class="mb-3">
+                            <!-- Grupo: nombre -->
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <!-- Etiqueta del campo -->
+                            <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Tu nombre" />
+                            <!-- Input de nombre -->
+                        </div>
 
-  </main>
+                        <div class="mb-3">
+                            <!-- Grupo: correo -->
+                            <label for="correo" class="form-label">Correo</label>
+                            <!-- Etiqueta -->
+                            <input type="email" id="correo" name="correo" class="form-control"
+                                placeholder="nombre@ejemplo.com" />
+                            <!-- Input email -->
+                        </div>
 
-  <!-- Bootstrap + JS propio -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="static/js/script.js"></script>
+                        <div class="mb-3">
+                            <!-- Grupo: asunto -->
+                            <label for="asunto" class="form-label">Asunto</label>
+                            <!-- Etiqueta -->
+                            <input type="text" id="asunto" name="asunto" class="form-control"
+                                placeholder="Asunto del mensaje" />
+                            <!-- Input texto -->
+                        </div>
+
+                        <div class="mb-3">
+                            <!-- Grupo: mensaje -->
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <!-- Etiqueta -->
+                            <textarea id="mensaje" name="mensaje" rows="5" class="form-control"
+                                placeholder="Tu mensaje..."></textarea>
+                            <!-- Área de texto -->
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100 btn-lg" onmouseover="resaltarBoton(this)"
+                            onmouseout="restaurarBoton(this)">
+                            Enviar
+                        </button>
+                        <!-- Botón enviar con hover JS -->
+                    </form>
+                    <!-- Fin form -->
+
+                    <p class="text-center texto-sutil mt-3">
+                        © <span id="anio"></span> Ariel Alejandro González Esparza
+                    </p>
+                    <!-- Pie con año dinámico -->
+                </div>
+            </div>
+            <!-- Fin fila -->
+        </section>
+        <!-- Fin sección CONTACT -->
+    </main>
+    <!-- Fin main (contenido principal) -->
+
+    <!-- ========== JS al final para rendimiento ========== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS de Bootstrap (componentes/scrollspy) -->
+    <script src="static/js/script.js"></script>
+    <!-- Tu JS de interactividad (eventos, carrusel, etc.) -->
 </body>
+<!-- Fin del cuerpo -->
+
 </html>
-
-
+<!-- Fin del documento HTML -->
