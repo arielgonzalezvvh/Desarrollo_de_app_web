@@ -277,6 +277,8 @@ main {
   box-shadow: 0 3px 10px rgba(0,0,0,.18);
   transition: transform .2s, box-shadow .2s;
   cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
 
 .skill-card:hover {
@@ -339,12 +341,14 @@ main {
   color: var(--texto-oscuro);
   border-radius: 10px;
   transition: all .3s ease;
+
 }
 
 .portfolio-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 25px rgba(0,0,0,.15);
 }
+
 
 /* FORMULARIOS (gris) */
 form {
@@ -391,7 +395,9 @@ form .form-select:focus {
   color: white;
 }
 
-
+.card-body{
+  color: rgb(104, 104, 104);
+}
 .colaboracion-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 22px rgba(0,0,0,.12);
@@ -411,4 +417,9 @@ form .form-select:focus {
   main { margin-left: 0; }
   .home-section { min-height: 70vh; padding: 40px 20px; text-align: center; }
 }
+
+.row{
+  background-color: #000000;
+}
+
 
